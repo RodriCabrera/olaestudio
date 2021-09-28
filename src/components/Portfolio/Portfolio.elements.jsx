@@ -30,18 +30,32 @@ export const ImagesGrid = styled.div`
 		grid-template-columns: repeat(1, 1fr);
 	}
 `;
-export const ImageCaption = styled.p`
+export const ProjectTitleWrapper = styled.div`
 	position: absolute;
+	height: 100%;
+	width: 70%;
+`;
+
+export const ProjectTitle = styled.p`
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	transform: translate(-50%, -50%);
 	opacity: 0;
+	font-size: 1.5rem;
 	color: lightblue;
-	transition: 700ms all cubic-bezier(0.35, 0.66, 0.21, 1.07);
+	transition: 500ms all ease;
 `;
 export const Image = styled.img`
 	width: 100%;
 	height: 100%;
-	transition: 700ms all cubic-bezier(0.35, 0.66, 0.21, 1.07);
+	transition: 200ms all ease-out;
 `;
 export const ImageWrapper = styled.div`
+	position: relative;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -50,9 +64,9 @@ export const ImageWrapper = styled.div`
 	align-items: center;
 	&:hover ${Image} {
 		filter: brightness(60%);
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
-	&:hover ${ImageCaption} {
+	&:hover ${ProjectTitle} {
 		opacity: 1;
 		font-size: 1.5rem;
 	}

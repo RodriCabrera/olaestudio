@@ -30,6 +30,7 @@ export const IconLogo = styled.h1`
 	letter-spacing: 2px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 800;
+	cursor: pointer;
 `;
 
 export const Menu = styled.ul`
@@ -49,7 +50,7 @@ export const Menu = styled.ul`
 		left: ${({ click }) => (click ? 0 : "-100%")};
 		flex-direction: column;
 		transition: 0.5s all ease-in-out;
-		background-color: whitesmoke;
+		background-color: #000000f4;
 	}
 `;
 
@@ -63,14 +64,15 @@ export const MenuItem = styled.li`
 	font-size: 1.2rem;
 	font-weight: 400;
 	transition: background-color 0.2s ease-in-out;
-
 	&:hover {
-		background-color: #eeeded;
+		background-color: #a5a5a550;
 	}
-
 	@media screen and (max-width: 960px) {
 		width: 100%;
 		height: 70px;
+		&:hover {
+			background-color: #2c2c2c50;
+		}
 	}
 `;
 // Acá iría el Link de react-router:
@@ -79,6 +81,13 @@ export const MenuItemLink = styled.a`
 	color: inherit;
 	&:hover {
 		color: black;
+	}
+	@media screen and (max-width: 960px) {
+		font-size: 1.5rem;
+		color: white;
+	}
+	&:hover {
+		color: lightblue;
 	}
 `;
 
