@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
 	width: 100%;
@@ -20,8 +21,10 @@ export const NavbarWrapper = styled.div`
 	flex-wrap: wrap;
 	margin: auto;
 `;
-export const IconLogo = styled.h1`
+export const IconLogo = styled(Link)`
 	/* height: 100%; */
+	color: inherit;
+	text-decoration: none;
 	margin: 0 5px;
 	padding: 0;
 	position: relative;
@@ -31,6 +34,9 @@ export const IconLogo = styled.h1`
 	font-family: "Montserrat", sans-serif;
 	font-weight: 800;
 	cursor: pointer;
+	&:hover {
+		color: inherit;
+	}
 `;
 
 export const Menu = styled.ul`
@@ -54,7 +60,8 @@ export const Menu = styled.ul`
 	}
 `;
 
-export const MenuItem = styled.li`
+export const MenuItem = styled(Link)`
+	text-decoration: none;
 	height: 100%;
 	padding: 0 1.5rem;
 	display: flex;

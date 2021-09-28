@@ -20,26 +20,26 @@ const Navbar = () => {
 	return (
 		<NavbarContainer>
 			<NavbarWrapper>
-				<IconLogo>OLA</IconLogo>
+				<IconLogo to="/">OLA</IconLogo>
 
 				<IconLogoMobile onClick={() => changeClick()}>
 					{click ? <FaTimes /> : <FaBars />}
 				</IconLogoMobile>
 
 				<Menu click={click}>
-					<MenuItem onClick={() => changeClick()}>
+					<MenuItem to="/about" onClick={() => changeClick()}>
 						<MenuItemLink>ABOUT</MenuItemLink>
 					</MenuItem>
-					<MenuItem onClick={() => changeClick()}>
-						<MenuItemLink>PORTFOLIO</MenuItemLink>
+					<MenuItem to="/portfolio" onClick={() => changeClick()}>
+						<MenuItemLink to="/portfolio">PORTFOLIO</MenuItemLink>
 					</MenuItem>
-					<MenuItem onClick={() => changeClick()}>
-						<MenuItemLink>STUDIO</MenuItemLink>
+					<MenuItem to="/studio" onClick={() => changeClick()}>
+						<MenuItemLink to="/studio">STUDIO</MenuItemLink>
 					</MenuItem>
-					<MenuItem onClick={() => changeClick()}>
+					<MenuItem to="/lab" onClick={() => changeClick()}>
 						<MenuItemLink>LAB</MenuItemLink>
 					</MenuItem>
-					<MenuItem onClick={() => changeClick()}>
+					<MenuItem to="/contact" onClick={() => changeClick()}>
 						<MenuItemLink>CONTACT</MenuItemLink>
 					</MenuItem>
 				</Menu>

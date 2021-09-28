@@ -93,7 +93,7 @@ const Portfolio = () => {
 
 	const mapProjects = () => {
 		const images = data.map((project) => (
-			<ImageWrapper key={project.id}>
+			<ImageWrapper key={project.id} to={`project/${project.id}`}>
 				<PortfolioImage src={project.thumbnail} />
 				<ProjectTitleWrapper>
 					<ProjectTitle>{project.title}</ProjectTitle>

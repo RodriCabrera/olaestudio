@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { Image } from "./Estudio.elements";
+import { Image } from "./Studio.elements";
 import studioPhoto1 from "../../assets/estudio-fotos/estudio-1.jpg";
 import studioPhoto2 from "../../assets/estudio-fotos/estudio-2.jpg";
 import studioPhoto3 from "../../assets/estudio-fotos/estudio-3.jpg";

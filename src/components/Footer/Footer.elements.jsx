@@ -10,7 +10,11 @@ export const FooterWrapper = styled.div``;
 export const SocialMediaWrapper = styled.div`
 	width: 25%;
 `;
-export const SocialMediaElement = styled.h4`
-	margin: 0;
-	cursor: pointer;
+export const SocialMediaElement = styled.a`
+	color: inherit;
+	text-decoration: none;
+	display: block;
+	&:hover {
+		color: inherit;
+	}
 `;

@@ -1,17 +1,11 @@
 import styled from "styled-components";
 
-export const EstudioContainer = styled.div`
+export const StudioContainer = styled.div`
 	width: 100%;
 	background-color: whitesmoke;
 `;
-export const EstudioWrapper = styled.div`
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`;
-export const EstudioHeader = styled.h1`
+
+export const StudioHeader = styled.h1`
 	text-align: center;
 	padding: 1rem;
 `;

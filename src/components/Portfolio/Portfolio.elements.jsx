@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.div`
@@ -54,7 +55,7 @@ export const Image = styled.img`
 	height: 100%;
 	transition: 200ms all ease-out;
 `;
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(Link)`
 	position: relative;
 	height: 100%;
 	width: 100%;
