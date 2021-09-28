@@ -14,7 +14,7 @@ import Project from "./pages/Project";
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<BrowserRouter basename="olaestudio">
 				<Navbar />
 				<Switch>
 					<Route exact path="/" component={Home} />
