@@ -56,7 +56,7 @@ export const Menu = styled.ul`
 		left: ${({ click }) => (click ? 0 : "-100%")};
 		flex-direction: column;
 		transition: 0.5s all ease-in-out;
-		background-color: #000000f4;
+		background-color: #000000e7;
 	}
 `;
 
@@ -83,7 +83,8 @@ export const MenuItem = styled(Link)`
 	}
 `;
 // Acá iría el Link de react-router:
-export const MenuItemLink = styled.a`
+export const MenuItemLink = styled.p`
+	margin: 0;
 	text-decoration: none;
 	color: inherit;
 	&:hover {
@@ -94,7 +95,7 @@ export const MenuItemLink = styled.a`
 		color: white;
 	}
 	&:hover {
-		color: lightblue;
+		color: inherit;
 	}
 `;
 

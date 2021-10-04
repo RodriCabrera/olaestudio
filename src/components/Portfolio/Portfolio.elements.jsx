@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.div`
 	height: auto;
 	width: 100%;
+	background-color: #c9c9c9;
+	padding: 2rem 0;
 `;
 
 export const PortfolioWrapper = styled.div`
@@ -12,7 +14,6 @@ export const PortfolioWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: pink;
 `;
 
 export const ImagesGrid = styled.div`
@@ -47,15 +48,15 @@ export const ProjectTitle = styled.p`
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	font-size: 1.5rem;
-	color: lightblue;
+	color: #ffffff;
 	transition: 500ms all ease;
 `;
-export const Image = styled.img`
-	width: 100%;
-	height: 100%;
+export const Thumbnail = styled.img`
+	width: auto;
+	/* height: 100%; */
 	transition: 200ms all ease-out;
 `;
-export const ImageWrapper = styled(Link)`
+export const ImageWrapperLink = styled(Link)`
 	position: relative;
 	height: 100%;
 	width: 100%;
@@ -63,7 +64,7 @@ export const ImageWrapper = styled(Link)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	&:hover ${Image} {
+	&:hover ${Thumbnail} {
 		filter: brightness(60%);
 		transform: scale(1.1);
 	}
@@ -71,4 +72,12 @@ export const ImageWrapper = styled(Link)`
 		opacity: 1;
 		font-size: 1.5rem;
 	}
+`;
+
+export const LoadingContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem;
+	width: 100%;
 `;

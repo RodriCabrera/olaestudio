@@ -30,9 +30,9 @@ const Navbar = () => {
 					<MenuItem to="/about" onClick={() => changeClick()}>
 						<MenuItemLink>ABOUT</MenuItemLink>
 					</MenuItem>
-					<MenuItem to="/portfolio" onClick={() => changeClick()}>
+					{/* <MenuItem to="/portfolio" onClick={() => changeClick()}>
 						<MenuItemLink to="/portfolio">PORTFOLIO</MenuItemLink>
-					</MenuItem>
+					</MenuItem> */}
 					<MenuItem to="/studio" onClick={() => changeClick()}>
 						<MenuItemLink to="/studio">STUDIO</MenuItemLink>
 					</MenuItem>

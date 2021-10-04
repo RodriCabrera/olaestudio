@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ProjectWrapper = styled.div`
@@ -14,3 +15,10 @@ export const ProjectVideo = styled.div`
 `;
 
 export const ProjectInfo = styled.div``;
+
+export const StyledBackLink = styled(Link)`
+	color: inherit;
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 1rem;
+`;

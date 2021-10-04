@@ -22,7 +22,7 @@ function App() {
 					<Route exact path="/portfolio" component={Portfolio} />
 					<Route exact path="/studio" component={Studio} />
 					<Route exact path="/contact" component={Contact} />
-					<Route exact path="/project/:id" component={Project} />
+					<Route exact path="/project/:id/:client/:title" component={Project} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 				<Footer />

@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const BannerContainer = styled.div`
 	top: 180px;
 	height: calc(100vh - 80px);
-	background-image: url("https://i.stack.imgur.com/y9DpT.jpg");
+	background-image: url("https://thumbs.gfycat.com/TintedFemaleFieldspaniel-size_restricted.gif");
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 `;
 export const BannerWrapper = styled.div`
 	height: 100%;

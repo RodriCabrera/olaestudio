@@ -1,29 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import useWindowSize from "../../hooks/useWindowSize";
 import {
 	ProjectInfo,
 	ProjectVideo,
 	ProjectWrapper,
+	StyledBackLink,
 } from "./ProjectContainer.elements";
 
-const ProjectContainer = ({ id }) => {
+const ProjectContainer = ({ id, client, title }) => {
 	const { width } = useWindowSize();
-
+	console.log(client);
 	function autoWidthVideo() {
 		let w = width - 38;
 		return w.toString();
 	}
+
+	const conditionalInfo = () => {
+		return client === "undefined" ? <></> : `${client} | `;
+	};
 	return (
 		<>
-			<p>current id: {id}</p>
-			<Link to="/">Back</Link>
+			<StyledBackLink to="/portfolio">Back to Projects</StyledBackLink>
 			<ProjectWrapper>
 				<ProjectVideo>
 					<iframe
 						width={autoWidthVideo()}
 						height="415"
-						src="https://www.youtube.com/embed/mGj7L2L7TEM?rel=0"
+						src={`https://www.youtube.com/embed/${id}?rel=0`}
 						title="YouTube video player"
 						frameborder="0"
 						rel="0"
@@ -32,13 +35,10 @@ const ProjectContainer = ({ id }) => {
 					></iframe>
 				</ProjectVideo>
 				<ProjectInfo>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-					atque voluptate inventore ullam accusamus at libero culpa nobis
-					aliquid fugit nostrum perferendis cumque, quidem consequatur est
-					totam? Voluptatibus, quo numquam.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Corporis atque voluptate inventore ullam
-					accusamus at libero culpa nobis aliquid fugit nostrum perferendis
-					cumque, quidem consequatur est totam? Voluptatibus, quo numquam.
+					<h2>
+						{conditionalInfo()}
+						{title}
+					</h2>
 				</ProjectInfo>
 			</ProjectWrapper>
 		</>

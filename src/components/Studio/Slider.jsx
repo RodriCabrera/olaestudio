@@ -46,7 +46,7 @@ const Slider = () => {
 	});
 	return (
 		<>
-			<Carousel touch={true} interval={null}>
+			<Carousel touch={true} interval={3000}>
 				{mapPics}
 			</Carousel>
 		</>

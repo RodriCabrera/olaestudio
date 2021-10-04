@@ -2,9 +2,9 @@ import React from "react";
 import {
 	BannerContainer,
 	BannerHeader,
-	BannerText,
 	BannerTextContainer,
 	BannerWrapper,
+	// BannerText,
 } from "./Banner.elements";
 
 const Banner = () => {
@@ -13,8 +13,8 @@ const Banner = () => {
 			<BannerWrapper>
 				<BannerHeader>
 					<BannerTextContainer>
-						<BannerText lg>INSERT</BannerText>
-						<BannerText>REEL</BannerText>
+						{/* <BannerText lg>INSERT</BannerText>
+						<BannerText>REEL</BannerText> */}
 					</BannerTextContainer>
 				</BannerHeader>
 			</BannerWrapper>
