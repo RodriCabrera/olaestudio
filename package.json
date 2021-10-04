@@ -1,6 +1,6 @@
 {
 	"name": "olaestudio.wav",
-	"homepage": "htps://rodrigocabrera1.github.io/olaestudio",
+	"homepage": ".",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
