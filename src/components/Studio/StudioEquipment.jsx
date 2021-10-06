@@ -1,8 +1,8 @@
 import React from "react";
-import studioPhoto1 from "../../assets/estudio-fotos/estudio-1.jpg";
-import studioPhoto2 from "../../assets/estudio-fotos/estudio-2.jpg";
-import studioPhoto3 from "../../assets/estudio-fotos/estudio-3.jpg";
-import studioPhoto4 from "../../assets/estudio-fotos/estudio-4.jpg";
+// import studioPhoto1 from "../../assets/estudio-fotos/estudio-1.jpg";
+// import studioPhoto2 from "../../assets/estudio-fotos/estudio-2.jpg";
+// import studioPhoto3 from "../../assets/estudio-fotos/estudio-3.jpg";
+// import studioPhoto4 from "../../assets/estudio-fotos/estudio-4.jpg";
 import Slider from "./Slider";
 import { StudioEqTitle, StudioEqText } from "./StudioEquipment.elements";
 
