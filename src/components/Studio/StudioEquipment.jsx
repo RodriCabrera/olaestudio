@@ -11,7 +11,6 @@ const StudioEquipment = () => {
 	return (
 		<>
 			<Slider />
-
 			<StudioEqTitle>Interfaces de Audio</StudioEqTitle>
 			<StudioEqText>Universal Audio Apollo 8p</StudioEqText>
 			<StudioEqText>Universal Audio Apollo 8</StudioEqText>

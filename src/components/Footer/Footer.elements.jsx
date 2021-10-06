@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
 `;
 export const FooterWrapper = styled.div``;
 export const SocialMediaWrapper = styled.div`
-	width: 25%;
+	/* width: 25%; */
 `;
 export const SocialMediaElement = styled.a`
 	color: inherit;

@@ -8,4 +8,5 @@ export const StudioEqTitle = styled.h3`
 `;
 export const StudioEqText = styled.p`
 	margin: 0 0 0 1rem;
+	text-align: center;
 `;
