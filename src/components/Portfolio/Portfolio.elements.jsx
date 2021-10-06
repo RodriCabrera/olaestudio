@@ -50,11 +50,17 @@ export const ProjectTitle = styled.p`
 	font-size: 1.5rem;
 	color: #ffffff;
 	transition: 500ms all ease;
+	@media screen and (max-width: 500px) {
+		opacity: 1;
+	}
 `;
 export const Thumbnail = styled.img`
 	width: auto;
 	/* height: 100%; */
 	transition: 200ms all ease-out;
+	@media screen and (max-width: 500px) {
+		filter: brightness(60%);
+	}
 `;
 export const ImageWrapperLink = styled(Link)`
 	position: relative;

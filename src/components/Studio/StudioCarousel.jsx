@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import { StudioContainer, StudioHeader } from "./Studio.elements";
 
-const Studio = () => {
+const StudioCarousel = () => {
 	return (
 		<>
 			<StudioContainer>
 				<StudioHeader>THE STUDIO</StudioHeader>
-				<Slider />
+				<Link to="/studio">
+					<Slider />
+				</Link>
 			</StudioContainer>
 		</>
 	);
 };
 
-export default Studio;
+export default StudioCarousel;

@@ -6,16 +6,17 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Studio from "./components/Studio/Studio";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
-
+import ScrollToTop from "./hooks/ScrollToTop";
+import Studio from "./pages/Studio";
 function App() {
 	return (
 		<>
 			<BrowserRouter basename="olaestudio">
 				<Navbar />
+				<ScrollToTop />
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/about" component={About} />

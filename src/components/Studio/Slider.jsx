@@ -11,26 +11,26 @@ const Slider = () => {
 		{
 			id: 1,
 			img: studioPhoto1,
-			title: "title1",
-			description: "photo 1 description",
+			title: "Control Room",
+			description: "",
 		},
 		{
 			id: 2,
 			img: studioPhoto2,
-			title: "title2",
-			description: "photo 2 description",
+			title: "Control Room",
+			description: "",
 		},
 		{
 			id: 3,
 			img: studioPhoto3,
-			title: "title3",
-			description: "photo 3 description",
+			title: "Control Room",
+			description: "Room Acoustics in every space",
 		},
 		{
 			id: 4,
 			img: studioPhoto4,
-			title: "title4",
-			description: "photo 4 description",
+			title: "Premium Equipment",
+			description: "",
 		},
 	];
 	const mapPics = studioPhotos.map((elem) => {

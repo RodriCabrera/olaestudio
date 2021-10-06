@@ -1,13 +1,13 @@
 import React from "react";
 import Banner from "../components/Banner/Banner";
 import Portfolio from "../components/Portfolio/Portfolio";
-import Studio from "../components/Studio/Studio";
+import StudioCarousel from "../components/Studio/StudioCarousel";
 const Home = () => {
 	return (
 		<>
-			<Banner></Banner>
-			<Portfolio></Portfolio>
-			<Studio></Studio>
+			<Banner />
+			<Portfolio />
+			<StudioCarousel />
 		</>
 	);
 };
