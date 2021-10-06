@@ -5,7 +5,7 @@ export const PortfolioContainer = styled.div`
 	height: auto;
 	width: 100%;
 	background-color: #c9c9c9;
-	padding: 2rem 0;
+	/* padding: 2rem 0; */
 `;
 
 export const PortfolioWrapper = styled.div`
@@ -56,7 +56,7 @@ export const ProjectTitle = styled.p`
 `;
 export const Thumbnail = styled.img`
 	width: auto;
-	/* height: 100%; */
+	height: 100%;
 	transition: 200ms all ease-out;
 	@media screen and (max-width: 500px) {
 		filter: brightness(60%);
