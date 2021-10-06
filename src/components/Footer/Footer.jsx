@@ -24,13 +24,13 @@ const Footer = () => {
 				>
 					LINKEDIN
 				</SocialMediaElement>
-				<SocialMediaElement
+				{/* <SocialMediaElement
 					href="https://www.youtube.com/channel/UCJfNS1PKdkdNouRqL5_yXmA/featured"
 					target="_blank"
 					rel="noreferrer"
 				>
 					YOUTUBE
-				</SocialMediaElement>
+				</SocialMediaElement> */}
 				{/* <SocialMediaElement>VIMEO</SocialMediaElement> */}
 			</SocialMediaWrapper>
 		</FooterContainer>

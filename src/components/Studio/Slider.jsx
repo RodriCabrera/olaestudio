@@ -37,10 +37,10 @@ const Slider = () => {
 		return (
 			<Carousel.Item key={elem.id}>
 				<Image src={elem.img} alt="studio photo" />
-				<Carousel.Caption>
+				{/* <Carousel.Caption>
 					<h3>{elem.title}</h3>
 					<p>{elem.description}</p>
-				</Carousel.Caption>
+				</Carousel.Caption> */}
 			</Carousel.Item>
 		);
 	});

@@ -15,11 +15,7 @@ const About = () => {
 				lineales y no lineales. Utilizando técnicas de grabación de campo,
 				foley, síntesis y sampling.
 			</p>
-			<p>
-				Mediante diseño sonoro, composición musical, audio inmersivo para medios
-				lineales y no lineales. Utilizando técnicas de grabación de campo,
-				foley, síntesis y sampling.
-			</p>
+			<p>OLA somos Matias Luzi, Luciano Cabrera, Federico Chillo.</p>
 		</div>
 	);
 };
