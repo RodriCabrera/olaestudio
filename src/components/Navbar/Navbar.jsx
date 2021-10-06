@@ -36,8 +36,8 @@ const Navbar = () => {
 					<MenuItem to="/studio" onClick={() => changeClick()}>
 						<MenuItemLink to="/studio">STUDIO</MenuItemLink>
 					</MenuItem>
-					<MenuItem to="/lab" onClick={() => changeClick()}>
-						<MenuItemLink>LAB</MenuItemLink>
+					<MenuItem to="/works" onClick={() => changeClick()}>
+						<MenuItemLink>WORKS</MenuItemLink>
 					</MenuItem>
 					<MenuItem to="/contact" onClick={() => changeClick()}>
 						<MenuItemLink>CONTACT</MenuItemLink>
