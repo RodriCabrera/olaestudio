@@ -1,7 +1,6 @@
 import React from "react";
 import {
 	FooterContainer,
-	FooterWrapper,
 	SocialMediaElement,
 	SocialMediaWrapper,
 } from "./Footer.elements";
