@@ -11,25 +11,25 @@ const Slider = () => {
 		{
 			id: 1,
 			img: studioPhoto1,
-			title: "Control Room",
+			title: "",
 			description: "",
 		},
 		{
 			id: 2,
 			img: studioPhoto2,
-			title: "Control Room",
+			title: "",
 			description: "",
 		},
 		{
 			id: 3,
 			img: studioPhoto3,
-			title: "Control Room",
-			description: "Room Acoustics in every space",
+			title: "",
+			description: "",
 		},
 		{
 			id: 4,
 			img: studioPhoto4,
-			title: "Premium Equipment",
+			title: "",
 			description: "",
 		},
 	];
