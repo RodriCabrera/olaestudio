@@ -13,22 +13,20 @@ import ScrollToTop from "./hooks/ScrollToTop";
 import Studio from "./pages/Studio";
 function App() {
 	return (
-		<>
-			<BrowserRouter basename="olaestudio">
-				<Navbar />
-				<ScrollToTop />
-				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route exact path="/about" component={About} />
-					<Route exact path="/portfolio" component={Portfolio} />
-					<Route exact path="/studio" component={Studio} />
-					<Route exact path="/contact" component={Contact} />
-					<Route exact path="/project/:id/:client/:title" component={Project} />
-					<Route path="*" component={NotFound} />
-				</Switch>
-				<Footer />
-			</BrowserRouter>
-		</>
+		<BrowserRouter basename="olaestudio">
+			<Navbar />
+			<ScrollToTop />
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/about" component={About} />
+				<Route exact path="/portfolio" component={Portfolio} />
+				<Route exact path="/studio" component={Studio} />
+				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/project/:id/:client/:title" component={Project} />
+				<Route path="*" component={NotFound} />
+			</Switch>
+			<Footer />
+		</BrowserRouter>
 	);
 }
 
