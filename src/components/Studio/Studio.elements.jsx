@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const StudioContainer = styled.div`
 	width: 100%;
@@ -20,8 +19,4 @@ export const Image = styled.div`
 	&:hover {
 		filter: brightness(125%);
 	}
-`;
-export const StyledLinkToPage = styled(Link)`
-	color: inherit;
-	text-decoration: none;
 `;

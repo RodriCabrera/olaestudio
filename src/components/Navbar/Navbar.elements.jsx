@@ -85,7 +85,7 @@ export const MenuItem = styled(Link)`
 	font-weight: 400;
 	transition: background-color 0.2s ease-in-out;
 	&:hover {
-		background-color: black;
+		background-color: #f0eeee;
 	}
 	@media screen and (max-width: 1000px) {
 		width: 100%;
