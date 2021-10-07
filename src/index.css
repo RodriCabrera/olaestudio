@@ -5,7 +5,9 @@
 	font-family: "Oswald", sans-serif;
 }
 
-/* font-family: 'Oswald', sans-serif; 
-OLA: Gotham black (Montserrat más espaciada)
-ESTUDIO: Tungsten (OSWALD)
-*/
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

@@ -9,17 +9,30 @@ export const NavbarContainer = styled.div`
 	z-index: 99;
 	padding: 0;
 	margin: 0;
-	background-color: whitesmoke;
+	background-color: white;
+	padding: 0 5rem;
+	@media screen and (max-width: 1000px) {
+		padding: 0;
+	}
 `;
 export const NavbarWrapper = styled.div`
 	height: 100%;
 	width: 100%;
-	max-width: 1300px;
+	max-width: 1200px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: auto;
+	@media screen and (max-width: 1000px) {
+		width: 600px;
+	}
+	@media screen and (max-width: 690px) {
+		width: 420px;
+	}
+	@media screen and (max-width: 480px) {
+		width: 320px;
+	}
 `;
 export const IconLogo = styled(Link)`
 	/* height: 100%; */
@@ -47,7 +60,7 @@ export const Menu = styled.ul`
 	padding: 0;
 	margin: 0;
 	cursor: pointer;
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1000px) {
 		width: 100%;
 		height: 90vh;
 		position: absolute;
@@ -56,7 +69,7 @@ export const Menu = styled.ul`
 		left: ${({ click }) => (click ? 0 : "-100%")};
 		flex-direction: column;
 		transition: 0.5s all ease-in-out;
-		background-color: #000000e7;
+		background-color: #000000;
 	}
 `;
 
@@ -72,13 +85,13 @@ export const MenuItem = styled(Link)`
 	font-weight: 400;
 	transition: background-color 0.2s ease-in-out;
 	&:hover {
-		background-color: #a5a5a550;
+		background-color: black;
 	}
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1000px) {
 		width: 100%;
 		height: 70px;
 		&:hover {
-			background-color: #2c2c2c50;
+			background-color: black;
 		}
 	}
 `;
@@ -90,7 +103,7 @@ export const MenuItemLink = styled.p`
 	&:hover {
 		color: black;
 	}
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1000px) {
 		font-size: 1.5rem;
 		color: white;
 	}
@@ -102,7 +115,7 @@ export const MenuItemLink = styled.p`
 export const IconLogoMobile = styled.div`
 	display: none;
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1000px) {
 		display: flex;
 		font-size: 2rem;
 		margin-right: 2rem;
