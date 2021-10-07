@@ -4,13 +4,10 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.div`
 	height: auto;
 	width: 100%;
-	background-color: #c9c9c9;
-	/* padding: 2rem 0; */
+	/* background-color: #c9c9c9; */
 `;
 
 export const PortfolioWrapper = styled.div`
-	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,10 +15,9 @@ export const PortfolioWrapper = styled.div`
 
 export const ImagesGrid = styled.div`
 	width: 100%;
-	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: minmax(200px, auto);
+	grid-auto-rows: minmax(auto, auto);
 	@media screen and (max-width: 1000px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -55,8 +51,8 @@ export const ProjectTitle = styled.p`
 	}
 `;
 export const Thumbnail = styled.img`
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 	transition: 200ms all ease-out;
 	@media screen and (max-width: 500px) {
 		filter: brightness(60%);
@@ -64,7 +60,7 @@ export const Thumbnail = styled.img`
 `;
 export const ImageWrapperLink = styled(Link)`
 	position: relative;
-	height: 100%;
+	height: auto;
 	width: 100%;
 	overflow: hidden;
 	display: flex;

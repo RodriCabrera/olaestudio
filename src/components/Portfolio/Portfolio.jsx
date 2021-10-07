@@ -33,9 +33,11 @@ const Portfolio = () => {
 			.catch((err) => console.log("ERROR", err))
 			.finally(() => setLoading(false));
 	}, []);
+
 	const conditionalClient = (project) => {
 		return project.client === "undefined" ? <></> : `${project.client} | `;
 	};
+
 	const mapProjects = () => {
 		return projects.map((project) => (
 			<ImageWrapperLink
