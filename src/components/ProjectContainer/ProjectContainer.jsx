@@ -26,11 +26,12 @@ const ProjectContainer = ({ id, client, title }) => {
 					<iframe
 						width={autoWidthVideo()}
 						height="415"
-						src={`https://www.youtube.com/embed/${id}?rel=0`}
+						src={`https://www.youtube.com/embed/${id}?rel=0&showinfo=0&modestbranding=0`}
 						title="YouTube video player"
 						frameborder="0"
-						rel="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						modestbranding="0"
+						showinfo="0"
+						allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen
 					></iframe>
 				</ProjectVideo>
