@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BannerContainer = styled.div`
 	top: 180px;
 	height: calc(100vh - 80px);
-	background-image: url("https://thumbs.gfycat.com/TintedFemaleFieldspaniel-size_restricted.gif");
+	/* background-image: url("https://thumbs.gfycat.com/TintedFemaleFieldspaniel-size_restricted.gif"); */
 	background-size: cover;
 	background-position: center;
 `;
