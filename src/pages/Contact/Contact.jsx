@@ -24,7 +24,6 @@ const Contact = () => {
 							name="user_name"
 							required
 						></ContactInput>
-
 						<ContactInput
 							type="text"
 							placeholder="Email"
