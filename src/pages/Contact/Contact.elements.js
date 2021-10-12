@@ -27,5 +27,6 @@ export const ContactTextArea = styled.textarea`
 export const ContactSendBtn = styled.button`
 	border: none;
 	padding: 15px;
-	background-color: lawngreen;
+	background-color: black;
+	color: white;
 `;
