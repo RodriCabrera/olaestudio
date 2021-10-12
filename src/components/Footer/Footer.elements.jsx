@@ -23,4 +23,5 @@ export const FooterCredits = styled.p`
 	text-align: center;
 	font-size: 0.8rem;
 	color: #696969;
+	margin-top: 1rem;
 `;
