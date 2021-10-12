@@ -23,9 +23,9 @@ const About = () => {
 					campo, foley, síntesis y sampling.
 				</BodyText>
 
-				<h6 style={{ textAlign: "center" }}>
+				<h5 style={{ textAlign: "center", margin: "2rem" }}>
 					OLA somos Matias Luzi, Luciano Cabrera y Federico Chillo.
-				</h6>
+				</h5>
 			</AboutWrapper>
 		</AboutContainer>
 	);

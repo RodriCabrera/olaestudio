@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const StudioEqImageContainer = styled.div``;
+export const StudioEqContainer = styled.div`
+	padding: 2rem;
+`;
 export const StudioEqImage = styled.img``;
 export const StudioEqTitle = styled.h3`
 	text-align: center;
