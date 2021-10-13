@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
 export const BannerContainer = styled.div`
+	/* position: relative; */
 	top: 180px;
 	height: calc(100vh - 80px);
-	/* background-image: url("https://thumbs.gfycat.com/TintedFemaleFieldspaniel-size_restricted.gif"); */
-	background-size: cover;
-	background-position: center;
+`;
+export const VideoBg = styled.iframe`
+	position: absolute;
+	top: 0;
+	max-width: 100%;
+	max-height: 100vh;
+	z-index: 1;
 `;
 export const BannerWrapper = styled.div`
+	z-index: 2;
 	height: 100%;
 	width: 100%;
 	padding: 1rem;
