@@ -7,33 +7,57 @@ import {
 	ContactTextArea,
 	ContactWrapper,
 } from "./Contact.elements";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-	const formRef = useRef();
-	const handleSubmit = (e) => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
 		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_YOUR_SERVICE_ID,
+				process.env.REACT_APP_YOUR_TEMPLATE_ID,
+				form.current,
+				process.env.REACT_APP_YOUR_USER_ID
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 	};
+
 	return (
 		<div>
 			<ContactContainer>
 				<ContactWrapper>
-					<ContactForm ref={formRef} onSubmit={handleSubmit}>
+					<ContactForm ref={form} onSubmit={sendEmail}>
 						<ContactInput
 							type="text"
 							placeholder="Name"
 							name="user_name"
-							required
 						></ContactInput>
 						<ContactInput
-							type="text"
+							type="email"
 							placeholder="Email"
 							name="user_email"
 							required
 						></ContactInput>
+						<ContactInput
+							type="tel"
+							placeholder="Telephone"
+							name="user_phone"
+							required
+						></ContactInput>
 						<ContactTextArea
-							rows="5"
-							placeholder="Message"
-							name="message"
+							rows="4"
+							placeholder="Send us your message, or enter your contact info and we'll reach out to you."
+							name="user_message"
 						></ContactTextArea>
 						<ContactSendBtn>Send</ContactSendBtn>
 					</ContactForm>

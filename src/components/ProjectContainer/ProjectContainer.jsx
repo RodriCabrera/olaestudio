@@ -9,7 +9,6 @@ import {
 
 const ProjectContainer = ({ id, client, title }) => {
 	const { width } = useWindowSize();
-	console.log(client);
 	function autoWidthVideo() {
 		let w = width - 38;
 		return w.toString();
@@ -28,7 +27,6 @@ const ProjectContainer = ({ id, client, title }) => {
 						height="415"
 						src={`https://www.youtube.com/embed/${id}?rel=0&showinfo=0&modestbranding=0`}
 						title="YouTube video player"
-						frameborder="0"
 						modestbranding="0"
 						showinfo="0"
 						allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
