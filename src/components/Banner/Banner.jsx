@@ -1,10 +1,10 @@
 import React from "react";
 import {
 	BannerContainer,
-	BannerHeader,
-	BannerTextContainer,
-	BannerWrapper,
-	BannerText,
+	// BannerHeader,
+	// BannerTextContainer,
+	// BannerWrapper,
+	// BannerText,
 	VideoBg,
 } from "./Banner.elements";
 
