@@ -59,9 +59,6 @@ export const Thumbnail = styled.img`
 	width: 100%;
 	height: auto;
 	transition: 200ms all ease-out;
-	@media screen and (max-width: 500px) {
-		/* filter: brightness(60%);
-	} */
 `;
 export const ImageWrapperLink = styled(Link)`
 	position: relative;
