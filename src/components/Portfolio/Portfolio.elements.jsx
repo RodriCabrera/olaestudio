@@ -4,7 +4,9 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.div`
 	height: auto;
 	width: 100%;
-	/* background-color: #c9c9c9; */
+	@media screen and (max-width: 470px) {
+		padding: 5px;
+	}
 `;
 
 export const PortfolioWrapper = styled.div`
@@ -16,15 +18,18 @@ export const PortfolioWrapper = styled.div`
 export const ImagesGrid = styled.div`
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-auto-rows: minmax(auto, auto);
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1600px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media screen and (max-width: 1300px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1000px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 470px) {
 		grid-template-columns: repeat(1, 1fr);
 	}
 `;
@@ -46,17 +51,17 @@ export const ProjectTitle = styled.p`
 	font-size: 1.5rem;
 	color: #ffffff;
 	transition: 500ms all ease;
-	@media screen and (max-width: 500px) {
+	/* @media screen and (max-width: 500px) {
 		opacity: 1;
-	}
+	} */
 `;
 export const Thumbnail = styled.img`
 	width: 100%;
 	height: auto;
 	transition: 200ms all ease-out;
 	@media screen and (max-width: 500px) {
-		filter: brightness(60%);
-	}
+		/* filter: brightness(60%);
+	} */
 `;
 export const ImageWrapperLink = styled(Link)`
 	position: relative;

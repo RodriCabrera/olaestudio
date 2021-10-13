@@ -18,7 +18,7 @@ export const NavbarContainer = styled.div`
 export const NavbarWrapper = styled.div`
 	height: 100%;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1500px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
