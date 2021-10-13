@@ -2,15 +2,20 @@ import React from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import {
 	ProjectInfo,
-	ProjectVideo,
 	ProjectWrapper,
 	StyledBackLink,
+	ProjectVideo,
 } from "./ProjectContainer.elements";
 
 const ProjectContainer = ({ id, client, title }) => {
-	const { width } = useWindowSize();
+	const { width, height } = useWindowSize();
+
 	function autoWidthVideo() {
-		let w = width - 38;
+		let w = width - 55;
+		return w.toString();
+	}
+	function autoHeightVideo() {
+		let w = height * 0.6;
 		return w.toString();
 	}
 
@@ -24,11 +29,9 @@ const ProjectContainer = ({ id, client, title }) => {
 				<ProjectVideo>
 					<iframe
 						width={autoWidthVideo()}
-						height="415"
+						height={autoHeightVideo()}
 						src={`https://www.youtube.com/embed/${id}?rel=0&showinfo=0&modestbranding=0`}
 						title="YouTube video player"
-						modestbranding="0"
-						showinfo="0"
 						allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen
 					></iframe>

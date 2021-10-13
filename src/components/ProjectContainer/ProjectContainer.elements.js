@@ -2,23 +2,23 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ProjectWrapper = styled.div`
-	height: 100%;
+	min-height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 300px;
+	justify-content: center;
 	padding: 1rem;
 `;
 export const ProjectVideo = styled.div`
-	/* width: 300px; */
-	height: 100%;
+	width: 100%;
 `;
-
-export const ProjectInfo = styled.div``;
+export const ProjectInfo = styled.div`
+	padding: 1rem;
+`;
 
 export const StyledBackLink = styled(Link)`
 	color: inherit;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	padding: 1rem;
 `;
