@@ -21,14 +21,14 @@ const Banner = () => {
 				allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				autoPlay="1"
 			></VideoBg>
-			<BannerWrapper>
+			{/* <BannerWrapper>
 				<BannerHeader>
 					<BannerTextContainer>
 						<BannerText lg>INSERT</BannerText>
 						<BannerText>REEL</BannerText>
 					</BannerTextContainer>
 				</BannerHeader>
-			</BannerWrapper>
+			</BannerWrapper> */}
 		</BannerContainer>
 	);
 };
