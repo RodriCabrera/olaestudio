@@ -12,7 +12,7 @@ const About = () => {
 	return (
 		<AboutContainer>
 			<AboutWrapper>
-				<AboutLogoHeader src={logo} alt=""></AboutLogoHeader>
+				<AboutLogoHeader src={logo} alt="ola logo"></AboutLogoHeader>
 				<MainText>
 					Somos un estudio de creatividad sonora en Colegiales, Buenos Aires.
 				</MainText>
