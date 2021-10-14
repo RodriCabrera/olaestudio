@@ -22,11 +22,9 @@ const Navbar = () => {
 	return (
 		<NavbarContainer>
 			<NavbarWrapper>
-				{/* <IconLogo to="/">OLA</IconLogo> */}
 				<Link to="/">
 					<Logo src={logo} />
 				</Link>
-				{/* <img src={logo} alt="logo" style={{ width: "150px" }} /> */}
 				<IconLogoMobile onClick={() => changeClick()}>
 					{click ? <FaTimes /> : <FaBars />}
 				</IconLogoMobile>
