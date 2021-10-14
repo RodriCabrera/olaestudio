@@ -7,7 +7,7 @@ import {
 	MainText,
 	SubMainText,
 } from "./About.elements";
-import logo from "../../assets/logos/LOGOmin.png";
+// import logo from "../../assets/logos/LOGOmin.png";
 const About = () => {
 	return (
 		<AboutContainer>
