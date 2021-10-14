@@ -5,15 +5,12 @@ export const NavbarContainer = styled.div`
 	width: 100%;
 	height: 80px;
 	position: sticky;
+	padding: 0 5rem;
 	top: 0;
 	z-index: 99;
-	padding: 0;
-	margin: 0;
-	background-color: white;
-	padding: 0 5rem;
-	@media screen and (max-width: 1000px) {
-		padding: 0;
-	}
+	background-color: #ffffffed;
+	/* otra opcion: */
+	backdrop-filter: blur(8px);
 `;
 export const NavbarWrapper = styled.div`
 	height: 100%;
