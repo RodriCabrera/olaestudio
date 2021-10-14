@@ -8,9 +8,7 @@ export const NavbarContainer = styled.div`
 	padding: 0 5rem;
 	top: 0;
 	z-index: 99;
-	background-color: #ffffffed;
-	/* otra opcion: */
-	backdrop-filter: blur(8px);
+	background-color: #ffffff;
 `;
 export const NavbarWrapper = styled.div`
 	height: 100%;
@@ -30,6 +28,10 @@ export const NavbarWrapper = styled.div`
 	@media screen and (max-width: 480px) {
 		width: 320px;
 	}
+`;
+export const Logo = styled.img`
+	height: 70px;
+	cursor: pointer;
 `;
 export const IconLogo = styled(Link)`
 	/* height: 100%; */
@@ -81,6 +83,8 @@ export const MenuItem = styled(Link)`
 	font-size: 1.2rem;
 	font-weight: 400;
 	transition: background-color 0.2s ease-in-out;
+	cursor: pointer;
+
 	&:hover {
 		background-color: #f0eeee;
 	}
@@ -97,6 +101,8 @@ export const MenuItemLink = styled.p`
 	margin: 0;
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
+
 	&:hover {
 		color: black;
 	}

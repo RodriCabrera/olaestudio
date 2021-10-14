@@ -16,7 +16,7 @@ const Banner = () => {
 				<VideoBg
 					width="100%"
 					height="100%"
-					src={`https://www.youtube.com/embed/Qqf9xf77rnc?rel=0&showinfo=0&modestbranding=0&autoplay=1&controls=0&mute=1&loop=1&playlist=Qqf9xf77rnc`}
+					src={`https://www.youtube.com/embed/ig54Pd5u5Zc?rel=0&showinfo=0&modestbranding=0&autoplay=1&controls=0&mute=1&loop=1&playlist=ig54Pd5u5Zc`}
 					title="YouTube video player"
 					allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				></VideoBg>

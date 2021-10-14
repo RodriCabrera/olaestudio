@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
-	IconLogo,
 	IconLogoMobile,
+	Logo,
 	Menu,
 	MenuItem,
 	MenuItemLink,
@@ -9,7 +9,9 @@ import {
 	NavbarWrapper,
 } from "./Navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
+import logo from "../../assets/logos/LOGOmin.png";
 const Navbar = () => {
 	const [click, setClick] = useState(false);
 
@@ -20,8 +22,11 @@ const Navbar = () => {
 	return (
 		<NavbarContainer>
 			<NavbarWrapper>
-				<IconLogo to="/">OLA</IconLogo>
-
+				{/* <IconLogo to="/">OLA</IconLogo> */}
+				<Link to="/">
+					<Logo src={logo} />
+				</Link>
+				{/* <img src={logo} alt="logo" style={{ width: "150px" }} /> */}
 				<IconLogoMobile onClick={() => changeClick()}>
 					{click ? <FaTimes /> : <FaBars />}
 				</IconLogoMobile>

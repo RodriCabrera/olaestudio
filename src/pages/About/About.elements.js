@@ -19,3 +19,6 @@ export const SubMainText = styled.h4`
 export const BodyText = styled.p`
 	font-size: 1.5rem;
 `;
+export const AboutLogoHeader = styled.img`
+	max-width: 700px;
+`;
