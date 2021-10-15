@@ -54,22 +54,26 @@ export const MenuItem = styled(Link)`
 	height: 100%;
 	padding: 0 1.5rem;
 	display: flex;
-	color: black;
+	color: #383838;
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
 	font-weight: 400;
 	transition: background-color 0.2s ease-in-out;
 	cursor: pointer;
+	transition: 0.3s all ease;
 
 	&:hover {
-		background-color: #f0eeee;
+		color: #070707;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
+			3px 1px 5px rgba(63, 191, 191, 0.2);
 	}
 	@media screen and (max-width: 1000px) {
 		width: 100%;
 		height: 70px;
 		&:hover {
 			background-color: black;
+			color: #979797;
 		}
 	}
 `;
