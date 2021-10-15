@@ -20,6 +20,7 @@ export const NavbarWrapper = styled.div`
 	align-items: center;
 `;
 export const Logo = styled.img`
+	padding-left: 1rem;
 	height: 70px;
 	cursor: pointer;
 	@media screen and (max-width: 480px) {
