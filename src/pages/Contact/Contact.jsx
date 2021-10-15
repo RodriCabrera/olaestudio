@@ -20,6 +20,7 @@ const Contact = () => {
 	});
 
 	const form = useRef();
+
 	const sendEmail = (e) => {
 		e.preventDefault();
 		setLoading(true);
@@ -47,10 +48,10 @@ const Contact = () => {
 	const onInputChange = (e) => {
 		setFormState((prevState) => ({
 			...prevState,
-			[e.target.id]: e.target.value,
+			[e.target.name]: e.target.value,
 		}));
 	};
-
+	console.log(formState);
 	function clearForm() {
 		setFormState({
 			userName: "",
@@ -62,44 +63,38 @@ const Contact = () => {
 	return (
 		<ContactContainer>
 			<ContactWrapper>
-				<ContactForm ref={form} onSubmit={sendEmail} autoComplete="off">
+				<ContactForm ref={form} onSubmit={sendEmail}>
 					<ContactInput
-						id="userName"
 						type="text"
 						placeholder="Name"
-						name="user_name"
+						name="userName"
 						value={formState.userName}
 						onChange={onInputChange}
 						required
-						autoComplete="off"
 					></ContactInput>
 					<ContactInput
 						type="text"
 						placeholder="Email"
-						id="userEmail"
-						name="user_email"
+						name="userEmail"
 						value={formState.userEmail}
 						onChange={onInputChange}
-						autoComplete="off"
 					></ContactInput>
 					<ContactInput
-						id="userPhone"
-						onChange={onInputChange}
-						type="text"
+						type="tel"
 						placeholder="Phone number"
+						name="userPhone"
 						value={formState.userPhone}
-						name="user_phone"
-						autoComplete="off"
+						onChange={onInputChange}
 					></ContactInput>
+
 					<ContactTextArea
 						rows="4"
 						placeholder="Send us your message, or enter your contact info and we'll reach out to you."
-						name="user_message"
-						id="userMessage"
+						name="userMessage"
 						onChange={onInputChange}
 						value={formState.userMessage}
-						autoComplete="off"
 					></ContactTextArea>
+
 					{loading ? (
 						<ContactSendBtn disabled>Sending Message...</ContactSendBtn>
 					) : (

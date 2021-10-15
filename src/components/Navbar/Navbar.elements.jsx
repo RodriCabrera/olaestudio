@@ -5,10 +5,11 @@ export const NavbarContainer = styled.div`
 	width: 100%;
 	height: 80px;
 	position: sticky;
-	padding: 0 5rem;
 	top: 0;
 	z-index: 99;
 	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
 `;
 export const NavbarWrapper = styled.div`
 	height: 100%;
@@ -17,37 +18,12 @@ export const NavbarWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
-	margin: auto;
-	@media screen and (max-width: 1000px) {
-		width: 600px;
-	}
-	@media screen and (max-width: 690px) {
-		width: 420px;
-	}
-	@media screen and (max-width: 480px) {
-		width: 320px;
-	}
 `;
 export const Logo = styled.img`
 	height: 70px;
 	cursor: pointer;
-`;
-export const IconLogo = styled(Link)`
-	/* height: 100%; */
-	color: inherit;
-	text-decoration: none;
-	margin: 0 5px;
-	padding: 0;
-	position: relative;
-	top: 0px;
-	font-size: 2.5rem;
-	letter-spacing: 2px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	cursor: pointer;
-	&:hover {
-		color: inherit;
+	@media screen and (max-width: 480px) {
+		height: 60px;
 	}
 `;
 
