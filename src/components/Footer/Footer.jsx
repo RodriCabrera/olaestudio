@@ -15,18 +15,18 @@ const Footer = () => {
 			<FooterWrapper>
 				<SocialMediaWrapper>
 					<SocialMediaElement
-						href="https://www.linkedin.com/company/ola-estudio/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<LinkedinIcon />
-					</SocialMediaElement>
-					<SocialMediaElement
 						href="https://www.instagram.com/olaestudio.wav/"
 						target="_blank"
 						rel="noreferrer"
 					>
 						<InstaIcon />
+					</SocialMediaElement>
+					<SocialMediaElement
+						href="https://www.linkedin.com/company/ola-estudio/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<LinkedinIcon />
 					</SocialMediaElement>
 				</SocialMediaWrapper>
 				<FooterCredits>
