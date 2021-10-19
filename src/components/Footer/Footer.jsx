@@ -19,14 +19,14 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<InstaIcon />
+						<LinkedinIcon />
 					</SocialMediaElement>
 					<SocialMediaElement
 						href="https://www.instagram.com/olaestudio.wav/"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<LinkedinIcon />
+						<InstaIcon />
 					</SocialMediaElement>
 				</SocialMediaWrapper>
 				<FooterCredits>
