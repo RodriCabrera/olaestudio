@@ -11,12 +11,18 @@ export const ReelContainer = styled.div`
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	height: 700px;
+	height: 850px;
+	@media screen and (max-width: 1500px) {
+		height: 100%;
+	}
 `;
 export const ReelGif = styled.img`
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
+	@media screen and (max-width: 1500px) {
+		height: auto;
+	}
 `;
 export const BannerWrapper = styled.div`
 	height: 100%;
