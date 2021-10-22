@@ -11,7 +11,7 @@ import {
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/logos/LOGOmin.png";
+import logo from "../../assets/logos/ola-esfumado.png";
 const Navbar = () => {
 	const [click, setClick] = useState(false);
 

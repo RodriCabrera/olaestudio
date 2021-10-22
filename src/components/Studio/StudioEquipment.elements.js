@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StudioEqContainer = styled.div`
 	padding: 2rem;
+	background-color: black;
+	color: white;
 `;
 export const StudioEqImage = styled.img``;
 export const StudioEqTitle = styled.h3`

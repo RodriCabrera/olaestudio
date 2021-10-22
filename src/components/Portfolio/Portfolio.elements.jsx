@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.div`
 	height: auto;
 	width: 100%;
+	background-color: black;
 	@media screen and (max-width: 470px) {
 		padding: 5px;
 	}

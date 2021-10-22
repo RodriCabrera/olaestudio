@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
 	height: 100%;
-	padding: 2rem;
+	padding: 3rem 2rem;
+	background-color: black;
 `;
 export const ContactWrapper = styled.div`
 	display: flex;
@@ -27,6 +28,6 @@ export const ContactTextArea = styled.textarea`
 export const ContactSendBtn = styled.button`
 	border: none;
 	padding: 15px;
-	background-color: black;
+	background-color: grey;
 	color: white;
 `;

@@ -3,7 +3,7 @@ import { GrLinkedin, GrInstagram } from "react-icons/gr";
 
 export const FooterContainer = styled.div`
 	color: white;
-	background-color: #494949;
+	background-color: black;
 	padding: 1.5rem 2rem 0rem 2rem;
 	display: flex;
 	justify-content: center;
@@ -30,7 +30,7 @@ export const SocialMediaElement = styled.a`
 `;
 export const FooterCredits = styled.p`
 	font-size: 0.8rem;
-	color: #696969;
+	color: #222222;
 	margin-top: 2rem;
 `;
 export const InstaIcon = styled(GrInstagram)``;

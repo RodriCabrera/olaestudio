@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 	color: black;
-	padding: 2rem 3rem;
+	padding: 2.5rem 3rem;
 	display: flex;
 	justify-content: center;
+	background-color: black;
+	color: white;
+	text-align: center;
 `;
 export const AboutWrapper = styled.div`
 	max-width: 700px;
