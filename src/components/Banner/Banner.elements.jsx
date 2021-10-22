@@ -11,8 +11,9 @@ export const ReelContainer = styled.div`
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	height: 850px;
-	@media screen and (max-width: 1500px) {
+	height: 650px;
+	max-height: calc(100vh - 80px);
+	@media screen and (max-width: 1000px) {
 		height: 100%;
 	}
 `;
@@ -20,7 +21,7 @@ export const ReelGif = styled.img`
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
-	@media screen and (max-width: 1500px) {
+	@media screen and (max-width: 1000px) {
 		height: auto;
 	}
 `;
