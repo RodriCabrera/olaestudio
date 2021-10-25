@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-	height: 100%;
+	min-height: 90vh;
 	padding: 3rem 2rem;
 	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 `;
 export const ContactWrapper = styled.div`
 	display: flex;

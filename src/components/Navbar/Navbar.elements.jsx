@@ -17,6 +17,9 @@ export const NavbarWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media screen and (max-width: 1000px) {
+		background-color: ${({ click }) => (click ? "black" : "rgba(0, 0, 0, 0)")};
+	}
 `;
 export const Logo = styled.img`
 	padding-left: 1rem;
@@ -39,13 +42,12 @@ export const Menu = styled.ul`
 	cursor: pointer;
 	@media screen and (max-width: 1000px) {
 		width: 100%;
-		height: 90vh;
+		height: 95vh;
 		position: absolute;
-		top: 80px;
-		/*click true: visible */
+		top: 60px;
 		left: ${({ click }) => (click ? 0 : "-100%")};
 		flex-direction: column;
-		transition: 0.5s all ease-in-out;
+		transition: 0.2s all cubic-bezier(0.39, 0.575, 0.565, 1);
 		background-color: #000000;
 	}
 `;
@@ -102,6 +104,7 @@ export const IconLogoMobile = styled.div`
 
 	@media screen and (max-width: 1000px) {
 		display: flex;
+		color: white;
 		font-size: 2rem;
 		margin-right: 2rem;
 	}
