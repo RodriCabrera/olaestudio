@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const BannerContainer = styled.div`
-	/* position: relative;
-	top: 180px; */
-	/* min-height: 60vh; */
+	height: 100%;
+	background-color: black;
 `;
 export const VideoBg = styled.iframe``;
 

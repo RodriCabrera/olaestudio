@@ -3,25 +3,28 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
 	width: 100%;
-	/* height: 80px; */
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 99;
-	color: white;
-	/* background-color: #ffffff; */
+	color: black;
 	display: flex;
 	justify-content: center;
 `;
 export const NavbarWrapper = styled.div`
 	height: 100%;
 	width: 100%;
+	/* position: sticky;
+	top: 100px; */
 	max-width: 1500px;
+	/* background: #0000000; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 `;
 export const Logo = styled.img`
 	padding-left: 1rem;
+	padding-top: 1rem;
+
 	height: 70px;
 	cursor: pointer;
 	@media screen and (max-width: 480px) {
@@ -55,7 +58,7 @@ export const MenuItem = styled(Link)`
 	height: 100%;
 	padding: 0 1.5rem;
 	display: flex;
-	color: #383838;
+	color: white;
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
