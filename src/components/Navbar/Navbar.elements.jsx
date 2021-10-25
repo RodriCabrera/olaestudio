@@ -13,10 +13,7 @@ export const NavbarContainer = styled.div`
 export const NavbarWrapper = styled.div`
 	height: 100%;
 	width: 100%;
-	/* position: sticky;
-	top: 100px; */
 	max-width: 1500px;
-	/* background: #0000000; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -68,7 +65,7 @@ export const MenuItem = styled(Link)`
 	transition: 0.3s all ease;
 
 	&:hover {
-		color: #070707;
+		color: #555555;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
 			3px 1px 5px rgba(63, 191, 191, 0.2);
 	}

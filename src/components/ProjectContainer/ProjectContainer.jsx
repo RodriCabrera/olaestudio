@@ -24,8 +24,8 @@ const ProjectContainer = ({ id, client, title }) => {
 	};
 	return (
 		<>
-			<StyledBackLink to="/portfolio">Back to Projects</StyledBackLink>
 			<ProjectWrapper>
+				<StyledBackLink to="/portfolio">Back to Projects</StyledBackLink>
 				<ProjectVideo>
 					<iframe
 						width={autoWidthVideo()}
