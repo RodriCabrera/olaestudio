@@ -1,8 +1,14 @@
+@font-face {
+	font-family: "Tungsten-Book";
+	src: local("Tungsten-Book"),
+		url("../src/assets/fonts/Tungsten-Book.otf") format("opentype");
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Tungsten-Book";
+	font-size: 24px;
 }
 
 #root {
